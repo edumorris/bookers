@@ -1,3 +1,3 @@
-window.onload = function() {
-  document.getElementById('header').style.display = 'none';
-};
+function libraryButton() {
+	alert('This link will be working soon');
+}

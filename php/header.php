@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Bookers Paradise</title>
 	<link rel="stylesheet" type="text/css" href="css/header.css">
@@ -10,27 +11,31 @@
 	<script type="text/javascript" src="js/functions.js"></script>
 </head>
 
-	<header id="header">
+<header id="header">
 
-		<div id="logo">
-			<a href="#">
-				<img src="images/company_logo.png">
-			</a>
-		</div>
+	<div id="logo">
+		<a href="#">
+			<img src="images/company_logo.png">
+		</a>
+	</div>
 
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">History</a></li>
-				<li>
-					<div id="buy_button">
-						<a href="#">
-							<button>BUY</button>
-						</a>
-					</div>
-				</li>
-			</ul>
-		</nav>
-		
-	</header>
+	<nav>
+		<ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">History</a></li>
+			<!-- Added -->
+			<li><a href="contact.php">Contact</a></li>
+			<li>
+				<!-- Tranfered 
+				<div id="buy_button">
+					<a href="#">
+						<button>BUY</button>
+					</a>
+				</div>
+				-->
+			</li>
+		</ul>
+	</nav>
+
+</header>

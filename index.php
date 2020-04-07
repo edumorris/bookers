@@ -1,6 +1,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/main_styler.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="./js/functions.js"></script>
 	<script type="text/javascript">
 		//Hide header on load
 		/*window.onload = function() {
@@ -8,25 +9,24 @@
 		};*/
 
 		//Show header on scroll up
-			var prevScrollpos = window.pageYOffset;
-			
-			window.onscroll = function() {
-				var currentScrollPos = window.pageYOffset;
+		var prevScrollpos = window.pageYOffset;
 
-  				if (prevScrollpos > currentScrollPos) {
-    				document.getElementById('header').style.top = "0";
-  				} 
-  				else {
-    				document.getElementById('header').style.top = "-50px";
- 		 		}
- 		 		prevScrollpos = currentScrollPos;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById('header').style.top = "0";
+			} else {
+				document.getElementById('header').style.top = "-50px";
 			}
-				
+			prevScrollpos = currentScrollPos;
+		}
 	</script>
 </head>
 <?php
-	require ('php/header.php');
+require('php/header.php');
 ?>
+
 <body>
 
 	<div id="container">
@@ -37,10 +37,19 @@
 					<h2>Bookers Paradise</h2>
 					<p>Enlight Your Mind.</p>
 				</span>
+
+				<div id="buy_button">
+					<a href="#">
+						<button>BUY</button>
+					</a>
+				</div>
+				
 			</div>
 		</div>
 
 		<div id="about">
+
+			<h2>ABOUT US</h2>
 
 			<div id="about_content">
 				<p>
@@ -53,36 +62,43 @@
 					We have partnerships with different universities, printing presses and companies to provide library services in the most remote of areas
 				</p>
 			</div>
-			
+
 			<div id="about_cards">
 
 				<div class="cards_about" id="cards_about_1">
 					<p>Library Services</p>
-					<button>VIEW</button>
+					<button class="details_button" onclick="libraryButton()">VIEW</button>
 				</div>
 
 				<div class="cards_about" id="cards_about_2">
 					<p>Bookshop</p>
-					<button>VIEW</button>
+					<button class="details_button">VIEW</button>
 				</div>
 
 				<div class="cards_about" id="cards_about_3">
-					<p>Research & Development</p>
-					<button>VIEW</button>
+					<p>R&D</p>
+					<button class="details_button">VIEW</button>
 				</div>
 
 			</div>
 		</div>
 
 		<div id="history">
+
+			<h2>OUR HISTORY</h2>
+
 			<ul>
-				<li><strong>2005</strong> - Established as a local library</li>
-				<li><strong>2007</strong> - </li>
+				<li><strong>2005</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp; Established as a local library.</li>
+				<li><strong>2007</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp; Re-establsshed as bothan online books platform and opened 2 more libraries.</li>
+				<li><strong>2009</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp; Established our mobile library units to cover larger and more remote areas.</li>
+				<li><strong>2010</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp; Partnered with <a href="#"><strong>Big Shot Publishers</strong></a>to be their online outlet for their published books.</li>
+				<li><strong>2011</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp; Established Bookers University.</li>
+				<li><strong>2013</strong> <br> &nbsp;&nbsp;&nbsp;&nbsp; Established Bookers University's <strong>Research & Develpment Section</strong> to take part in the research and develpment in Science, Mathematics and Arts.</li>
 			</ul>
 		</div>
 
 	</div>
 </body>
-<?php 
-	require ('php/footer.php')
+<?php
+require('php/footer.php')
 ?>
