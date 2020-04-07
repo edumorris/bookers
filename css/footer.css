@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Gotu|IM+Fell+French+Canon+SC|Lobster|Oswald|Roboto+Slab&display=swap');
+
+footer {
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background-color: #100000;
+	border-top: 2px solid black;
+	vertical-align: center;
+}
+
+footer #footer_content {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	padding-left: 50px;
+	padding-top: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+#footer_content a {
+	text-decoration: none;
+	color: white;
+}
+
+#copyright {
+
+}
+
+#designer_ad {
+	padding-left: 500px;
+}

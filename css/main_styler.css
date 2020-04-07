@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:600&display=swap');
+
+body {
+	background: rgb(16,0,0);
+	background: -moz-linear-gradient(300deg, rgba(16,0,0,1) 0%, rgba(42,2,0,1) 100%);
+	background: -webkit-linear-gradient(300deg, rgba(16,0,0,1) 0%, rgba(42,2,0,1) 100%);
+	background: linear-gradient(300deg, rgba(16,0,0,1) 0%, rgba(42,2,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#100000",endColorstr="#2a0200",GradientType=1);
+}
+
+#container {
+	max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
+#hero {
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+	background-image: url("../images/books_hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#hero_content {
+	color: white;
+	margin: 20% auto 20% 150px;
+	scroll-behavior: smooth;
+}
+
+#hero_content>span>h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 70px;
+	text-decoration: underline overline;
+	text-shadow: 5px 5px 3px #000000;
+}
+
+#hero_content>span>p {
+	font-family: 'Dancing Script', cursive;
+	font-style: italic;
+	font-size: 40px;
+	text-shadow: 5px 5px 3px #5C0000;
+}
+
+#about {
+	width: 80%;
+	margin: 20px auto 20px auto;
+	text-align: center;
+	color: white;
+}
