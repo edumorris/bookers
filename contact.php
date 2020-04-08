@@ -5,21 +5,36 @@
 </head>
 
 <?php
-	require ('php/header.php');
+require('php/header.php');
 ?>
 
 <body>
 	<div id="container">
-		<h2>Contact Us</h2>
+
+		<div id="contact_details">
+			<div class="cds" id="co_name">
+				BOOKERS.Co
+			</div>
+			<div class="cds" id="tel">
+				0800-BOOKERS-Co
+			</div>
+			<div class="cds" id="our_email">
+				info@bookers.lib
+			</div>
+		</div>
+
+		<div id="map">
+			<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Booker&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		</div>
 
 		<div id="contact_form">
-			<form>
+			<form method="post" action="js/contact.js">
 				<h2>Inquiry</h2>
 				<table>
 					<tbody>
 						<tr>
 							<td><label for="customers_name">Your Name:</label></td>
-							<td><input type="text" name="name" id="customers_name" placeholder="Enter your full name." required></td>	
+							<td><input type="text" name="name" id="customers_name" placeholder="Enter your full name." required></td>
 						</tr>
 						<tr>
 							<td><label for="customers_phone_number">Phone Number:</label></td>
@@ -48,15 +63,10 @@
 				</table>
 			</form>
 		</div>
-		
-		<!--
-		<div id="map">
-			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDqJLOawtDtHt2SkwMHLzZIDlMt-FUG_SY'></script><div style='overflow:hidden;height:500px;width:600px;'><div id='gmap_canvas' style='height:500px;width:600px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.com/'>google map for my website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d622c7e752aaedc272bae93f57547fe9fdfbe535'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(41.31,-72.92),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.31,-72.92)});infowindow = new google.maps.InfoWindow({content:'<strong>Bookers HQ</strong><br><br> <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-		</div>
-	-->
+
 	</div>
 </body>
 
-<?php 
-	require ('php/footer.php');
+<?php
+require('php/footer.php');
 ?>

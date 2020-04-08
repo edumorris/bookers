@@ -30,6 +30,7 @@ body {
 	color: white;
 	margin: 20% auto 20% 150px;
 	scroll-behavior: smooth;
+	z-index: 64;
 }
 
 #hero_content>span>h2 {
@@ -47,21 +48,21 @@ body {
 }
 
 #buy_button {
-		vertical-align: middle;
+	vertical-align: middle;
 	z-index: 2;
 	display: inline-block;
 }
 
 #buy_button button {
-	height: 50px;
-	width: 100px;
+	height: 70px;
+	width: 120px;
 	border-radius: 20px;
 	box-shadow: 3px 4px 3px black;
 	display: inline-block;
-	background-color: #fb9f00;
+	background-color: #0faef0;
 
 	text-align: center;
-	font-family: 'Lobster', cursive;
+	font-family: 'Roboto Slab', cursive;
 	color: white;
 	font-size: 24px;
 	font-weight: bold;
@@ -133,10 +134,7 @@ body {
 	text-align: justify;
 	color: white;
 	font-family: 'Merriweather', serif;
-	font-size: 3vw;
+	font-size: 24px;
 	line-height: 45px;
 }
 
-#history ul {
-	
-}

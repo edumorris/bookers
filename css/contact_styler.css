@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif:700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 body {
 	background: rgb(16,0,0);
@@ -9,16 +10,20 @@ body {
 	color: white;
 }
 
+#container {
+	width: 100%;
+}
+
 form table tbody tr td label {
 	font-family: 'Noto Serif', cursive;
 }
 
 form {
-	background-color: #00000050;
 	width: 45%;
 	height: auto;
-	border: 2px solid white;
 	border-radius: 25px;
+	margin: 50px auto 50px auto;
+	box-shadow: 5px 5px 0 white;
 }
 
 form h2 {
@@ -36,7 +41,7 @@ form table {
 
 [type="text"], [type="number"], [type="email"], textarea {
 	box-sizing: border-box;
-	width: 300px;
+	width: 350px;
 	background-color: #ffffff10;
 	color: white;
 	padding: 5px 0 5px 10px;
@@ -44,6 +49,10 @@ form table {
 	border: none;
 	border-bottom: 1px solid white;
 	margin: 5px 0 5px 0;
+}
+
+[type="text"], [type="number"], [type="email"] {
+	height: 30px;
 }
 
 [type="submit"] {
@@ -54,7 +63,7 @@ form table {
 	height: 30px;
 	border: none;
 	border-radius: 20px;
-	font-family: 'Noto Serif', cursive;
+	font-family: 'Noto Serif', Serif;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -65,5 +74,59 @@ tr {
 
 label {
 	background-color: #00000050;
+	padding: 10px;
+	border-radius: 20px;
 }
+
+#map {
+	width: 70%;
+	margin: 50 auto 0 auto;
+}
+
+#contact_form {
+	background-color: #00000050;
+	padding: 50px 0 50px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#contact_details {
+	background-color: #ffffff90;
+	width: 98%;
+	margin: 30px auto 0 auto;
+	color: rgba(16, 0, 0, 1);
+	text-align: center;
+	display: block;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+	border-radius: 10px;
+	font-family: 'Anton', sans-serif;
+}
+
+.cds {
+	margin-top: 10px;
+}
+
+#co_name {
+	font-size: 8em;
+	width: 80%;
+	border-bottom: 2px solid rgba(16, 0, 0, 1);
+	margin: 0 auto;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	text-shadow: 4px 3px 1px black
+
+}
+
+
+#tel {
+	font-size: 3em;
+}
+
+#our_email {
+	font-size: 1.5em;
+	font-style: italic;
+}
+
 

@@ -42,8 +42,8 @@
 	<nav>
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">History</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#history">History</a></li>
 			<!-- Added -->
 			<li><a href="contact.php">Contact</a></li>
 			<li>
