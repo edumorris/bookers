@@ -2,26 +2,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main_styler.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="./js/functions.js"></script>
-	<script type="text/javascript">
-		//Hide header on load
-		/*window.onload = function() {
-  			document.getElementById('header').style.display = 'none';
-		};*/
-
-		//Show header on scroll up
-		var prevScrollpos = window.pageYOffset;
-
-		window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-
-			if (prevScrollpos > currentScrollPos) {
-				document.getElementById('header').style.top = "0";
-			} else {
-				document.getElementById('header').style.top = "-50px";
-			}
-			prevScrollpos = currentScrollPos;
-		}
-	</script>
 </head>
 <?php
 require('php/header.php');

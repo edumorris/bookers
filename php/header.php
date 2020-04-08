@@ -9,6 +9,26 @@
 	<meta name="theme-color" content="#100000">
 	<!--<script src="https://kit.fontawesome.com/a097096ef6.js" crossorigin="anonymous"></script>-->
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript">
+		//Hide header on load
+		/*window.onload = function() {
+  			document.getElementById('header').style.display = 'none';
+		};*/
+
+		//Show header on scroll up
+		var prevScrollpos = window.pageYOffset;
+
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById('header').style.top = "0";
+			} else {
+				document.getElementById('header').style.top = "-50px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
 </head>
 
 <header id="header">
