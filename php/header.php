@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="icon" href="images/icon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#100000">
+	<meta name="theme-color" content="#561302">
 	<!--<script src="https://kit.fontawesome.com/a097096ef6.js" crossorigin="anonymous"></script>-->
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript">

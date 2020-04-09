@@ -19,7 +19,7 @@ require('php/header.php');
 				</span>
 
 				<div id="buy_button">
-					<a href="#">
+					<a href="shop.php">
 						<button>BUY</button>
 					</a>
 				</div>
@@ -47,7 +47,7 @@ require('php/header.php');
 
 				<div class="cards_about" id="cards_about_1">
 					<p>Library Services</p>
-					<button class="details_button" onclick="libraryButton()">VIEW</button>
+					<button class="details_button" onclick="nonePage()">VIEW</button>
 				</div>
 
 				<div class="cards_about" id="cards_about_2">
@@ -57,7 +57,7 @@ require('php/header.php');
 
 				<div class="cards_about" id="cards_about_3">
 					<p>R&D</p>
-					<button class="details_button">VIEW</button>
+					<button class="details_button" onclick="nonePage()">VIEW</button>
 				</div>
 
 			</div>

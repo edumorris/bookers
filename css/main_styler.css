@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 body {
-	background: rgb(16,0,0);
-	background: -moz-linear-gradient(300deg, rgba(16,0,0,1) 0%, rgba(42,2,0,1) 100%);
-	background: -webkit-linear-gradient(300deg, rgba(16,0,0,1) 0%, rgba(42,2,0,1) 100%);
-	background: linear-gradient(300deg, rgba(16,0,0,1) 0%, rgba(42,2,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#100000",endColorstr="#2a0200",GradientType=1);
+	background: rgb(86,19,2);
+	background: -moz-linear-gradient(300deg, rgba(86, 19, 2, 1) 0%, rgba(42,2,0,1) 100%);
+	background: -webkit-linear-gradient(300deg, rgba(86, 19, 2, 1) 0%, rgba(42,2,0,1) 100%);
+	background: linear-gradient(300deg, rgba(86, 19, 2, 1) 0%, rgba(42,2,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#561302",endColorstr="#2a0200",GradientType=1);
 }
 
 #container {
@@ -57,9 +57,9 @@ body {
 	height: 70px;
 	width: 120px;
 	border-radius: 20px;
-	box-shadow: 3px 4px 3px black;
+	box-shadow: 5px 4px 1px white;
 	display: inline-block;
-	background-color: #0faef0;
+	background-color: rgba(86,19,2, 1);
 
 	text-align: center;
 	font-family: 'Roboto Slab', cursive;
@@ -70,7 +70,7 @@ body {
 
 #buy_button button:hover {
 	cursor: pointer;
-	transform: scale(1.3);
+	transform: scale(1.05);
 }
 
 #about {
