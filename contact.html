@@ -1,12 +1,61 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/contact_styler.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript" src="./js/functions.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="icon" href="images/icon.ico" type="image/x-icon">
+
+  <title>Bookers Paradise</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#561302">
+	<!--<script src="https://kit.fontawesome.com/a097096ef6.js" crossorigin="anonymous"></script>-->
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript">
+		var prevScrollpos = window.pageYOffset;
+
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById('header').style.top = "0";
+			} else {
+				document.getElementById('header').style.top = "-50px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
 </head>
 
-<?php
-require('php/header.php');
-?>
+<header id="header">
+
+	<div id="logo">
+		<a href="#">
+			<img src="images/company_logo.png">
+		</a>
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#history">History</a></li>
+			<!-- Added -->
+			<li><a href="contact.html">Contact</a></li>
+			<li>
+				<!-- Tranfered
+				<div id="buy_button">
+					<a href="#">
+						<button>BUY</button>
+					</a>
+				</div>
+				-->
+			</li>
+		</ul>
+	</nav>
+
+</header>
 
 <body>
 	<div id="container">
@@ -67,6 +116,18 @@ require('php/header.php');
 	</div>
 </body>
 
-<?php
-require('php/footer.php');
-?>
+<footer id="footer">
+
+	<div id="footer_content">
+		<div id="copyright">
+			&copyBookers Paradise, 2020
+		</div>
+
+		<div id="designer_ad">
+			<a href="#">Designed By: <strong>Edwin Morris</strong></a>
+		</div>
+	</div>
+
+</footer>
+
+</html>

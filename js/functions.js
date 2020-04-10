@@ -3,7 +3,7 @@ function nonePage() {
 }
 
 function buyButton() {
-	window.location.assign('shop.php')
+	window.location.assign('shop.html')
 }
 
 function openMenu() {

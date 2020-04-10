@@ -23,15 +23,16 @@ form {
 	height: auto;
 	border-radius: 25px;
 	margin: 50px auto 50px auto;
-	box-shadow: 5px 5px 0 white;
+	box-shadow: 5px 5px 0 #fca102;
 }
 
 form h2 {
 	text-align: center;
 	color: black;
-	background-color: white;
-	width: 90%;
-	margin: 20px auto 20px auto;
+	background-color: #fca102;
+	width: 70%;
+	margin: 30px auto 30px auto;
+	border-radius: 20px;
 }
 
 form table {
@@ -57,7 +58,7 @@ form table {
 
 [type="submit"] {
 	margin: 20px auto 20px auto;
-	background-color: white;
+	background-color: #fca102;
 	font-weight: bold;
 	width: 100px;
 	height: 30px;
@@ -73,7 +74,7 @@ tr {
 }
 
 label {
-	background-color: #00000050;
+	background-color: #fca10250;
 	padding: 10px;
 	border-radius: 20px;
 }
@@ -81,6 +82,7 @@ label {
 #map {
 	width: 70%;
 	margin: 50 auto 0 auto;
+	display: none;
 }
 
 #contact_form {
@@ -91,7 +93,7 @@ label {
 }
 
 #contact_details {
-	background-color: #ffffff90;
+	background-color: #fca102;
 	width: 98%;
 	margin: 30px auto 0 auto;
 	color: rgba(16, 0, 0, 1);
@@ -115,7 +117,7 @@ label {
 	margin: 0 auto;
 	padding-bottom: 10px;
 	border-radius: 5px;
-	text-shadow: 4px 3px 1px black
+	text-shadow: 4px 3px 1px white;
 
 }
 
@@ -128,5 +130,3 @@ label {
 	font-size: 1.5em;
 	font-style: italic;
 }
-
-
