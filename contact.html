@@ -2,16 +2,17 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/contact_styler.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="stylesheet" type="text/css" href="css/header.css">
+  	<link rel="stylesheet" type="text/css" href="css/footer.css">
+  	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="icon" href="images/icon.ico" type="image/x-icon">
 
-  <title>Bookers Paradise</title>
+  	<title>Bookers Paradise</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#561302">
-	<!--<script src="https://kit.fontawesome.com/a097096ef6.js" crossorigin="anonymous"></script>-->
+	<script src="https://kit.fontawesome.com/a097096ef6.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
+
 	<script type="text/javascript">
 		var prevScrollpos = window.pageYOffset;
 
@@ -26,35 +27,29 @@
 			prevScrollpos = currentScrollPos;
 		}
 	</script>
+
 </head>
 
 <header id="header">
+	
 
-	<div id="logo">
-		<a href="#">
-			<img src="images/company_logo.png">
-		</a>
-	</div>
+    <div id="logo">
+        <a href="#">
+            <img src="images/company_logo.png">
+        </a>
 
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#history">History</a></li>
-			<!-- Added -->
-			<li><a href="contact.html">Contact</a></li>
-			<li>
-				<!-- Tranfered
-				<div id="buy_button">
-					<a href="#">
-						<button>BUY</button>
-					</a>
-				</div>
-				-->
-			</li>
-		</ul>
-	</nav>
-
+        <i class="fas fa-bars" id="menu-btn-home" onclick="openMenuHome()"></i>
+		<i class="fas fa-times" id="close-btn-home" onclick="closeMenuHome()"></i>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home <sup><i class="fas fa-home"></i></sup></a></li>
+            <li><a href="#about">About <sup><i class="fas fa-info"></i></sup></a></li>
+            <li><a href="#history">History <sup><i class="fas fa-history"></i></sup></a></li>
+            <li><a href="contact.html">Contact <sup><i class="fas fa-phone-alt"></i></sup></a></li>
+        </ul>
+    </nav>
 </header>
 
 <body>
@@ -77,7 +72,7 @@
 		</div>
 
 		<div id="contact_form">
-			<form method="post" action="js/contact.js">
+			<form method="post" action="js/contact.js" id="normal_form">
 				<h2>Inquiry</h2>
 				<table>
 					<tbody>
@@ -111,23 +106,64 @@
 					</tbody>
 				</table>
 			</form>
-		</div>
+
+			<form method="post" action="js/contact.js" id="for_smaller_devices">
+				<h2>Inquiry</h2>
+				<table>
+					<tbody>
+						<tr>
+							<td class="label"><label for="customers_name">Your Name:</label></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="name" id="customers_name" placeholder="Enter your full name." required></td>
+						</tr>
+						<tr>
+							<td class="label"><label for="customers_phone_number">Phone Number:</label></td>
+						</tr>
+						<tr>
+							<td><input type="number" name="phone_number" id="customers_phone_number" placeholder="Enter your phone number."></td>
+						</tr>
+						<tr>
+							<td class="label"><label for="customers_email">Email:</label></td>
+						</tr>
+						<tr>
+							<td><input type="email" name="email" id="customers_email" placeholder="Enter your email address." required></td>
+						</tr>
+						<tr>
+							<td class="label"><label for="message_subject">Subject:</label></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="subject" id="message_subject" placeholder="Inquiry subject." required></td>
+						</tr>
+						<tr style="margin-top: 20px">
+							<td style="overflow: hidden;">
+								<label for="message" style="margin-bottom: 10px;">Message:</label>
+								<textarea id="message" rows="10" cols="50" placeholder="Enter your message or inquiry here." required></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="submit" name="submit"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
 
 	</div>
 </body>
 
 <footer id="footer">
-
-	<div id="footer_content">
-		<div id="copyright">
-			&copyBookers Paradise, 2020
-		</div>
-
-		<div id="designer_ad">
-			<a href="#">Designed By: <strong>Edwin Morris</strong></a>
-		</div>
-	</div>
-
+    <div id="footer_content">
+        <div id="copyright">
+            &copyBookers Paradise, 2020
+        </div>
+        <div id="designer_ad">
+            <a href="#">Designed By: <strong>Edwin Morris</strong></a>
+        </div>
+        <div id="small_alternative">
+            &copyBookers Paradise, 2020 &nbsp;&nbsp;&nbsp; Designed By: <strong>Edwin Morris</strong>
+        </div>
+    </div>
 </footer>
+
 
 </html>

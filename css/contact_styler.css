@@ -14,6 +14,10 @@ body {
 	width: 100%;
 }
 
+#for_smaller_devices {
+	display: none;
+}
+
 form table tbody tr td label {
 	font-family: 'Noto Serif', cursive;
 }
@@ -54,6 +58,10 @@ form table {
 
 [type="text"], [type="number"], [type="email"] {
 	height: 30px;
+}
+
+[type="number"] {
+
 }
 
 [type="submit"] {
@@ -104,6 +112,8 @@ label {
 	font-weight: bold;
 	border-radius: 10px;
 	font-family: 'Anton', sans-serif;
+
+	box-shadow: 5px 5px 3px white;
 }
 
 .cds {
@@ -129,4 +139,39 @@ label {
 #our_email {
 	font-size: 1.5em;
 	font-style: italic;
+}
+
+/*--------------------Smaller Devices--------------------*/
+@media only screen and (max-width: 980px) {
+
+	* {
+		overflow-x: hidden;
+	}
+
+	table tr {
+		display: block;
+	}
+
+	#normal_form {
+		display: none;
+	}
+
+	#for_smaller_devices {
+		display: block;
+	}
+
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.label {
+		overflow: hidden;
+	}
+
+	#co_name {
+		font-size: 5em;
+		color: black;
+	}
+
 }

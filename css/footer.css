@@ -24,10 +24,43 @@ footer #footer_content {
 	color: white;
 }
 
-#copyright {
-
-}
 
 #designer_ad {
 	padding-left: 500px;
+}
+
+#small_alternative {
+	display: none;
+}
+
+/*--------------------Smaller Devices--------------------*/
+@media only screen and (max-width: 980px) {
+	footer {
+		height: 56px;
+		width: 100%;	
+	}
+
+	footer #footer_content {
+		width: 100%;
+		display: inline-flex;
+		color: white;
+		font-size: 12px;
+		overflow: none;
+	}
+
+	#copyright {
+		display: none
+	}
+
+	#designer_ad {
+		display: none;
+	}
+
+	#small_alternative {
+		display: inline-block;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.5em;
+	}
 }
