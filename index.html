@@ -24,6 +24,18 @@
         }
         prevScrollpos = currentScrollPos;
     }
+
+    function openMenuHome() {
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("menu-btn-home").style.display = "none";
+        document.getElementById("close-btn-home").style.display = "block";
+    }
+
+    function closeMenuHome() {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("menu-btn-home").style.display = "block";
+        document.getElementById("close-btn-home").style.display = "none";
+    }
     </script>
 </head>
 <header id="header">
@@ -38,8 +50,8 @@
 		<i class="fas fa-times" id="close-btn-home" onclick="closeMenuHome()"></i>
     </div>
     
-    <nav id="menu">
-        <ul>
+    <nav>
+        <ul id="menu">
             <li><a href="index.html">Home <sup><i class="fas fa-home"></i></sup></a></li>
             <li><a href="#about">About <sup><i class="fas fa-info"></i></sup></a></li>
             <li><a href="#history">History <sup><i class="fas fa-history"></i></sup></a></li>

@@ -26,6 +26,18 @@
 			}
 			prevScrollpos = currentScrollPos;
 		}
+
+		function openMenuHome() {
+			document.getElementById("menu").style.display = "block";
+			document.getElementById("menu-btn-home").style.display = "none";
+			document.getElementById("close-btn-home").style.display = "block";
+		}
+
+		function closeMenuHome() {
+			document.getElementById("menu").style.display = "none";
+			document.getElementById("menu-btn-home").style.display = "block";
+			document.getElementById("close-btn-home").style.display = "none";
+		}
 	</script>
 
 </head>
@@ -39,11 +51,12 @@
         </a>
 
         <i class="fas fa-bars" id="menu-btn-home" onclick="openMenuHome()"></i>
-		<i class="fas fa-times" id="close-btn-home" onclick="closeMenuHome()"></i>
+		<i class="far fa-times-circle" id="close-btn-home" onclick="closeMenuHome()"></i>
+		<i class=""></i>
     </div>
     
     <nav>
-        <ul>
+        <ul id="menu">
             <li><a href="index.html">Home <sup><i class="fas fa-home"></i></sup></a></li>
             <li><a href="#about">About <sup><i class="fas fa-info"></i></sup></a></li>
             <li><a href="#history">History <sup><i class="fas fa-history"></i></sup></a></li>
